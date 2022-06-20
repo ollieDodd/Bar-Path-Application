@@ -1,31 +1,4 @@
-#AIMS
-# - Input video of lift DONE
-# - Be able to select bar DONE
-# - Track movement of the bar DONE
-# - Differentiate between eccentric and concentric DONE
-# - Plot bar path and send too graph to show path DONE
-# - Plot bar path on video DONE
-# - Connect dots between points
-# - Plot best bar path for SBD respectively DONE 
-# - Plot error of bar path (harder than once thought)
 
-# - Account for mutiple reps 
-# Get start of the rep DONE
-# Get end of rep height buffer zone DONE
-# If buffer gets entered and exited count rep DONE
-# Dont count movement within buffer
-# show difference between reps
-# Visualise 
-
-# - Show bar path for all reps 
-# - Show error for all reps and decide on best rep
-
-# - Track depth on squat
-
-# - Allow users to trim down videos 
-# - Save video visulasiation and graph visulaistaion 
-# - Save raw trimmed videos
-from turtle import color
 import numpy as np
 import cv2 
 import matplotlib.pyplot as plt
@@ -318,7 +291,7 @@ class benchPress(lifts):
             self.oY.append(y)
 
                     
-path = ('C:/Users/olive/Documents/Portfolio/Bar path tracker/Videos/deadliftReps.MP4')
+path = ('deadliftReps.MP4')
 
 s = deadLifts(path)
 s.locateBar()
